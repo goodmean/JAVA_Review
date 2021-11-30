@@ -1,19 +1,16 @@
-// 문제 : 3개의 자동차가 각각 1번씩 달리게 해주세요.
+// 문제 : 아래와 같이 출력되도록 해주세요.
+// 조건 : `숨쉬다` 기능을 중복하지 말아주세요.
 
 class Main {
   public static void main(String[] args) {
-    자동차 a자동차1 = new 자동차();
-    자동차 a자동차2 = new 자동차();
-    자동차 a자동차3 = new 자동차();
-
-    a자동차1.달리다();
-    a자동차2.달리다();
-    a자동차3.달리다();
+    사람 a사람 = new 사람();
+    a사람.숨쉬다();
   }
 }
-
-class 자동차 {
-  void 달리다() {
-    System.out.println("자동차가 달립니다.");
+class 사람 extends 동물 {
+}
+class 동물 {
+  void 숨쉬다() {
+    System.out.println("숨쉬다.");
   }
 }
